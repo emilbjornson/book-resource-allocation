@@ -3,7 +3,7 @@ Optimal Resource Allocation in Coordinated Multi-Cell Systems
 
 This is a code package is related to the follow research book:
 
-Emil Björnson, Eduard Jorswieck, “[“Optimal Resource Allocation in Coordinated Multi-Cell Systems](http://kth.diva-portal.org/smash/get/diva2:608533/FULLTEXT01),” Foundations and Trends in Communications and Information Theory, vol. 9, no. 2-3, pp. 113-381, 2013
+Emil Björnson, Eduard Jorswieck, “[Optimal Resource Allocation in Coordinated Multi-Cell Systems](http://kth.diva-portal.org/smash/get/diva2:608533/FULLTEXT01),” Foundations and Trends in Communications and Information Theory, vol. 9, no. 2-3, pp. 113-381, 2013
 
 The package contains Matlab implementations of many of the algorithms described in the book. The use of these algorithms is exemplified by Matlab scripts that generate some of the figures shown in the book. *We encourage you to also perform reproducible research!*
 
