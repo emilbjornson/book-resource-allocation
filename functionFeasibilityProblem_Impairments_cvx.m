@@ -80,8 +80,7 @@ for k = 1:Kr
     %transceiver impairments at the transmitter and receiver. Note that the
     %impact of impairments at the receiver can be included directly in the
     %SOCP when the linear distortion functions are considered.
-    real(hkD(k, :)*W(:, k)) >= sqrt(gammavar(k))*norm([1; EVMrPlusNoise*diag(hkD([1:k-1 k+1:Kr],:)*W(:,[1:k-1 k+1:Kr])); EVMr*hkD(k,:)*W(:,k); abs(hkD(k,:)') .* t ]);
-
+    real(hkD(k, :)*W(:, k)) >= sqrt(gammavar(k))*norm([1; EVMrPlusNoise*(hkD(k,:)*W(:,[1:k-1 k+1:Kr]))'; EVMr*hkD(k,:)*W(:,k); abs(hkD(k,:)') .* t ]);
 end
 
 %The distortion magnitude at each transmit antenna should be smaller or
