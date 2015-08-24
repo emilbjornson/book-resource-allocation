@@ -17,7 +17,7 @@ function [feasible,Wsolution] = functionFeasibilityProblem_cvx(H,D,Qsqrt,q,gamma
 %constraints. The implementation can, at least, handle 30 users, 50
 %antennas, and 50 power constraints.
 %
-%This is version 1.0.
+%This is version 1.1.
 %The implementation utilizes and requires CVX: http://cvxr.com/
 %
 %INPUT:
@@ -66,7 +66,7 @@ for k = 1:Kr
     imag(hkD(k,:)*W(:,k)) == 0; %Useful link is assumed to be real-valued
     
     %SOCP formulation for the SINR constraint of user k
-    real(hkD(k,:)*W(:,k)) >= sqrt(gammavar(k))*norm([1; diag(hkD([1:k-1 k+1:Kr],:)*W(:,[1:k-1 k+1:Kr]))  ]);
+    real(hkD(k,:)*W(:,k)) >= sqrt(gammavar(k))*norm([1 hkD(k,:)*W(:,[1:k-1 k+1:Kr])  ]);
 end
 
 %Power constraints (L constraints) scaled by the variable betavar
