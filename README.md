@@ -7,7 +7,7 @@ Emil Björnson, Eduard Jorswieck, “[Optimal Resource Allocation in Coordinated
 
 The package contains Matlab implementations of many of the algorithms described in the book. The use of these algorithms is exemplified by Matlab scripts that generate some of the figures shown in the book. *We encourage you to also perform reproducible research!*
 
-##Abstract of Book
+## Abstract of Book
 
 The use of multiple antennas at base stations is a key component in the design of cellular communication systems that can meet high-capacity demands in the downlink. Under ideal conditions, the gain of employing multiple antennas is well-recognized: the data throughput increases linearly with the number of transmit antennas if the spatial dimension is utilized to serve
 many users in parallel. The practical performance of multi-cell systems is, however, limited by a variety of nonidealities, such as insufficient channel knowledge, high computational complexity, heterogeneous user conditions, limited backhaul capacity, transceiver impairments, and the constrained level of coordination between base stations.
@@ -19,13 +19,13 @@ The performance of multi-cell systems depends on the resource allocation; that i
 This tutorial provides a solid ground and understanding for optimization of practical multi-cell systems, including the impact of the nonidealities mentioned above. The Matlab code is available online for some of the examples and algorithms in this tutorial.
 
 
-##Content of Code Package
+## Content of Code Package
 
 The code package contains implementations of 10 algorithms and precoding schemes. The package also contains the code that reproduces 7 figures in the book: 2.8, 2.10, 3.1, 3.2, 3.6, 4.5 and 4.9. See the file "documentation.pdf" and each file for further documentation. 
 
 The convex optimization problems are implemented using the modeling language [CVX](http://cvxr.com/cvx/).
 
 
-##License and Referencing
+## License and Referencing
 
 This code package is licensed under the GPLv2 license. If you in any way use this code for research that results in publications, please cite our original article listed above.
